@@ -11,6 +11,18 @@ overrides:
 importers:
 
   .:
+    devDependencies:
+      '@biomejs/biome':
+        specifier: 1.9.4
+        version: 1.9.4
+      '@types/node':
+        specifier: ^20.9.0
+        version: 20.17.24
+      typescript:
+        specifier: ^5.2.2
+        version: 5.8.2
+
+  apps/indexer:
     dependencies:
       hono:
         specifier: ^4.5.0
