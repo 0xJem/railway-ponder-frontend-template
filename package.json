@@ -4,13 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "pnpm --filter=* run build",
     "dev": "pnpm --filter=* run dev",
-    "start": "ponder start",
-    "db": "ponder db",
-    "codegen": "ponder codegen",
     "lint": "biome check --write",
-    "lint:check": "biome check",
-    "build": "pnpm --filter=* run build"
+    "lint:check": "biome check"
   },
   "dependencies": {},
   "devDependencies": {
