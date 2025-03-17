@@ -1,6 +1,6 @@
-# railway-ponder-template
+# railway-ponder-frontend-template
 
-This is a template for Railway that helps you get started with deploying the [Ponder](https://ponder.sh/) blockchain indexer.
+This is a template for Railway that helps you get started with deploying the [Ponder](https://ponder.sh/) blockchain indexer with a Vite frontend.
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/ma-2Wo?referralCode=gzL_8s)
 
@@ -14,6 +14,8 @@ This is a template for Railway that helps you get started with deploying the [Po
   - Exposes GraphQL at the `/graphql` endpoint
   - Exposes the Ponder SQL API at the `/sql/` endpoint
   - Sample indexing of the Chainlink ETH-USD price feed
+- React frontend (using Vite)
+  - Pre-configured with the indexer address
 
 ## Next Steps
 
