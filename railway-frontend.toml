@@ -1,8 +1,0 @@
-[build]
-builder = "dockerfile"
-dockerfilePath = "apps/frontend/Dockerfile"
-watchPatterns = ["apps/frontend/**", "railway-frontend.toml"]
-
-[deploy]
-healthcheckPath = "/"
-healthcheckTimeout = 10
