@@ -2,7 +2,7 @@
 
 This is a template for Railway that helps you get started with deploying the [Ponder](https://ponder.sh/) blockchain indexer with a Vite frontend.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/ma-2Wo?referralCode=gzL_8s)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/P4Yo89?referralCode=gzL_8s)
 
 ## Features
 
