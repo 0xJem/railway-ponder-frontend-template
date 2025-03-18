@@ -12,3 +12,7 @@ yarn-error.log*
 
 # Env files
 .env*.local
+
+**/generated
+**/dist
+**/.ponder
