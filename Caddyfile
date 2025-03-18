@@ -1,0 +1,4 @@
+:{$PORT}
+
+root * /app/apps/frontend/dist/
+file_server
