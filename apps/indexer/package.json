@@ -11,7 +11,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "hono": "^4.5.0",
+    "hono": "^4.12.34",
     "ponder": "^0.9.28",
     "viem": "^2.21.3"
   },
@@ -23,5 +23,5 @@
   "engines": {
     "node": ">=18.14"
   },
-  "packageManager": "pnpm@9.5.0"
+  "packageManager": "pnpm@11.25.0"
 }
