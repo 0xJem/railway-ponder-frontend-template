@@ -36,4 +36,6 @@ Following creation of your own repo for source code:
 ## Commands
 
 - Run development server: `pnpm run dev`
+- Generate Ponder types and sync files required by the isolated Railway services: `pnpm codegen`
+- Check that the committed deployment files are current: `pnpm artifacts:check`
 - Lint: `pnpm run lint`

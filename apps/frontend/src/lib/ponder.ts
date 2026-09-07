@@ -1,5 +1,5 @@
 import { createClient } from "@ponder/client";
-import * as schema from "../../../indexer/ponder.schema";
+import * as schema from "../ponder.schema";
 
 // Validate the environment variable
 const PONDER_URL = import.meta.env.VITE_PONDER_URL;
