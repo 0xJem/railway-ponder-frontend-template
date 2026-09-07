@@ -33,9 +33,7 @@ const files = [
   },
   {
     name: "Frontend pnpm workspace policy",
-    content: createAppWorkspace(
-      'allowBuilds:\n  "esbuild@0.25.1": true',
-    ),
+    content: createAppWorkspace('allowBuilds:\n  "esbuild@0.25.1": true'),
     target: new URL("../apps/frontend/pnpm-workspace.yaml", import.meta.url),
   },
   {
@@ -56,7 +54,10 @@ let stale = false;
 
 for (const file of files) {
   const source = file.content ?? (await readFile(file.source));
-  const target = await readFile(file.target).catch(() => undefined);
+  const target = await readFile(file.target).catch((error) => {
+    if (error.code === "ENOENT") return undefined;
+    throw error;
+  });
 
   if (target?.equals(source)) {
     console.log(`${file.name} is up to date.`);
