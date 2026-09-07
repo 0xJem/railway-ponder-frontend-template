@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "artifacts:check": "node scripts/sync-isolated-roots.mjs --check",
+    "artifacts:sync": "node scripts/sync-isolated-roots.mjs",
     "build": "pnpm --filter=* run build",
+    "codegen": "pnpm --filter=indexer run codegen && pnpm artifacts:sync",
     "dev": "pnpm --filter=* run dev",
     "lint": "biome check --write",
     "lint:check": "biome check"

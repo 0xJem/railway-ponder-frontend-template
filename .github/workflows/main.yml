@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Check generated deployment files
+        run: pnpm artifacts:check
+
       - name: Run lint check
         run: pnpm lint:check
 
